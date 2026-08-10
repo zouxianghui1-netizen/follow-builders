@@ -4,7 +4,7 @@
 // Follow Builders — Prepare Digest
 // ============================================================================
 // Gathers everything the LLM needs to produce a digest:
-// - Fetches the central feeds (tweets + podcasts)
+// - Fetches the central feeds (tweets + podcasts + blogs + weekly Agent projects)
 // - Fetches the latest prompts from GitHub
 // - Reads the user's config (language, delivery method)
 // - Outputs a single JSON blob to stdout
@@ -26,11 +26,12 @@ import { homedir } from 'os';
 const USER_DIR = join(homedir(), '.follow-builders');
 const CONFIG_PATH = join(USER_DIR, 'config.json');
 
-const FEED_X_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json';
-const FEED_PODCASTS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-podcasts.json';
-const FEED_BLOGS_URL = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-blogs.json';
+const FEED_X_URL = 'https://raw.githubusercontent.com/zouxianghui1-netizen/follow-builders/main/feed-x.json';
+const FEED_PODCASTS_URL = 'https://raw.githubusercontent.com/zouxianghui1-netizen/follow-builders/main/feed-podcasts.json';
+const FEED_BLOGS_URL = 'https://raw.githubusercontent.com/zouxianghui1-netizen/follow-builders/main/feed-blogs.json';
+const FEED_AGENT_PROJECTS_URL = 'https://raw.githubusercontent.com/zouxianghui1-netizen/follow-builders/main/feed-agent-projects.json';
 
-const PROMPTS_BASE = 'https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/prompts';
+const PROMPTS_BASE = 'https://raw.githubusercontent.com/zouxianghui1-netizen/follow-builders/main/prompts';
 const PROMPT_FILES = [
   'summarize-podcast.md',
   'summarize-tweets.md',
@@ -72,16 +73,18 @@ async function main() {
     }
   }
 
-  // 2. Fetch all three feeds
-  const [feedX, feedPodcasts, feedBlogs] = await Promise.all([
+  // 2. Fetch all central feeds
+  const [feedX, feedPodcasts, feedBlogs, feedAgentProjects] = await Promise.all([
     fetchJSON(FEED_X_URL),
     fetchJSON(FEED_PODCASTS_URL),
-    fetchJSON(FEED_BLOGS_URL)
+    fetchJSON(FEED_BLOGS_URL),
+    fetchJSON(FEED_AGENT_PROJECTS_URL)
   ]);
 
   if (!feedX) errors.push('Could not fetch tweet feed');
   if (!feedPodcasts) errors.push('Could not fetch podcast feed');
   if (!feedBlogs) errors.push('Could not fetch blog feed');
+  if (!feedAgentProjects) errors.push('Could not fetch weekly Agent project feed');
   if (feedX?.errors?.length) {
     errors.push(
       ...feedX.errors.map((error) => `Tweet feed problem: ${error}`)
@@ -151,6 +154,15 @@ async function main() {
     podcasts: feedPodcasts?.podcasts || [],
     x: feedX?.x || [],
     blogs: feedBlogs?.blogs || [],
+    agentProjects: feedAgentProjects?.projects || [],
+    agentProjectsSnapshot: feedAgentProjects
+      ? {
+          generatedAt: feedAgentProjects.generatedAt,
+          snapshotDate: feedAgentProjects.snapshotDate,
+          methodology: feedAgentProjects.methodology,
+          warnings: feedAgentProjects.warnings
+        }
+      : null,
 
     // Stats for the LLM to reference
     stats: {
@@ -158,6 +170,7 @@ async function main() {
       xBuilders: feedX?.x?.length || 0,
       totalTweets: (feedX?.x || []).reduce((sum, a) => sum + a.tweets.length, 0),
       blogPosts: feedBlogs?.blogs?.length || 0,
+      agentProjects: feedAgentProjects?.projects?.length || 0,
       feedGeneratedAt: feedX?.generatedAt || feedPodcasts?.generatedAt || feedBlogs?.generatedAt || null
     },
 

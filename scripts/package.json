@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "generate-feed": "node generate-feed.js",
-    "prepare-digest": "node prepare-digest.js"
+    "generate-agent-projects": "node generate-agent-projects.js",
+    "prepare-digest": "node prepare-digest.js",
+    "test": "node --test"
   },
   "dependencies": {
     "dotenv": "^16.4.0",
