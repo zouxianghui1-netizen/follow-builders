@@ -1,0 +1,31 @@
+name: Generate Weekly Agent Projects
+
+on:
+  schedule:
+    # Monday 00:17 UTC / 08:17 Asia/Shanghai. No secrets required.
+    - cron: '17 0 * * 1'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate weekly Agent project feed
+        run: node scripts/generate-agent-projects.js
+
+      - name: Commit and push feed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add feed-agent-projects.json
+          git diff --cached --quiet || git commit -m "chore: update weekly Agent projects [skip ci]"
+          git push
