@@ -13,6 +13,7 @@
 - 顶级 AI 播客新节目的精华摘要
 - 26 位精选 AI 建造者在 X/Twitter 上的关键观点和洞察
 - AI 公司官方博客的完整文章（Anthropic Engineering、Claude Blog）
+- 每周刷新 10 个经验证的热门 GitHub Agent 项目，并明确标注热度证据
 - 所有原始内容的链接
 - 支持英文、中文或双语版本
 
@@ -83,13 +84,13 @@ Skill 使用纯文本 prompt 文件来控制内容的摘要方式。你可以通
 clawhub install follow-builders
 
 # 或手动安装
-git clone https://github.com/zarazhangrui/follow-builders.git ~/skills/follow-builders
+git clone https://github.com/zouxianghui1-netizen/follow-builders.git ~/skills/follow-builders
 cd ~/skills/follow-builders/scripts && npm install
 ```
 
 ### Claude Code
 ```bash
-git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders
+git clone https://github.com/zouxianghui1-netizen/follow-builders.git ~/.claude/skills/follow-builders
 cd ~/.claude/skills/follow-builders/scripts && npm install
 ```
 

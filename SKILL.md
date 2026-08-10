@@ -1,6 +1,6 @@
 ---
 name: follow-builders
-description: AI builders digest — monitors top AI builders on X and YouTube podcasts, remixes their content into digestible summaries. Use when the user wants AI industry insights, builder updates, or invokes /ai. No API keys or dependencies required — all content is fetched from a central feed.
+description: AI builders digest — monitors top AI builders on X, podcasts, and official blogs, and includes 10 verified hot GitHub Agent projects each week. Use when the user wants AI industry insights, builder updates, this week's GitHub Agent projects, or invokes /ai. No API keys or dependencies required — all content is fetched from central feeds.
 ---
 
 # Follow Builders, Not Influencers
@@ -325,6 +325,9 @@ The script outputs a single JSON blob with everything you need:
 - `config` — user's language and delivery preferences
 - `podcasts` — podcast episodes with full transcripts
 - `x` — builders with their recent tweets (text, URLs, bios)
+- `blogs` — official blog posts with full text and URLs
+- `agentProjects` — up to 10 verified GitHub Agent projects, with weekly heat evidence or an explicit active-supplement label
+- `agentProjectsSnapshot` — snapshot date, methodology, and any evidence warnings for the project list
 - `prompts` — the remix instructions to follow
 - `stats` — counts of episodes and tweets
 - `errors` — non-fatal issues (IGNORE these)
@@ -334,7 +337,8 @@ internet connection. Otherwise, use whatever content is in the JSON.
 
 ### Step 3: Check for content
 
-If `stats.podcastEpisodes` is 0 AND `stats.xBuilders` is 0, tell the user:
+If `stats.podcastEpisodes`, `stats.xBuilders`, `stats.blogPosts`, and
+`stats.agentProjects` are all 0, tell the user:
 "No new updates from your builders today. Check back tomorrow!" Then stop.
 
 ### Step 4: Remix content
@@ -356,6 +360,15 @@ Read the prompts from the `prompts` field in the JSON:
 **Podcast (process second):** The `podcasts` array has at most 1 episode. If present:
 1. Summarize its `transcript` using `prompts.summarize_podcast`
 2. Use `name`, `title`, and `url` from the JSON object — NOT from the transcript
+
+**Blogs (process third):** Summarize each `blogs` entry and include its direct URL.
+
+**Weekly Agent projects (process fourth):** The `agentProjects` array is already ranked.
+List at most 10 entries in that order. Show `Weekly +N Stars` only when
+`heatType` is `weekly-trending`; for `active-supplement`, state
+`活跃补充项；周增 Star 未提供`. Include each direct GitHub URL. If fewer than 10
+verified entries are present, preserve the count and show the warning from
+`agentProjectsSnapshot`; never fabricate or estimate missing projects.
 
 Assemble the digest following `prompts.digest_intro`.
 
@@ -417,7 +430,7 @@ When the user says something that sounds like a settings change, handle it:
 The source list is managed centrally and cannot be modified by users.
 If a user asks to add or remove sources, tell them: "The source list is curated
 centrally and updates automatically. If you'd like to suggest a source, you can
-open an issue at https://github.com/zarazhangrui/follow-builders."
+open an issue at https://github.com/zouxianghui1-netizen/follow-builders."
 
 ### Schedule Changes
 - "Switch to weekly/daily" → Update `frequency` in config.json

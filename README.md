@@ -17,6 +17,7 @@ WhatsApp, etc.) with:
 - Summaries of new podcast episodes from top AI podcasts
 - Key posts and insights from 26 curated AI builders on X/Twitter
 - Full articles from official AI company blogs (Anthropic Engineering, Claude Blog)
+- 10 verified hot GitHub Agent projects, refreshed weekly with explicit heat evidence
 - Links to all original content
 - Available in English, Chinese, or bilingual
 
@@ -90,13 +91,13 @@ These are plain English instructions, not code. Changes take effect on the next 
 clawhub install follow-builders
 
 # Or manually
-git clone https://github.com/zarazhangrui/follow-builders.git ~/skills/follow-builders
+git clone https://github.com/zouxianghui1-netizen/follow-builders.git ~/skills/follow-builders
 cd ~/skills/follow-builders/scripts && npm install
 ```
 
 ### Claude Code
 ```bash
-git clone https://github.com/zarazhangrui/follow-builders.git ~/.claude/skills/follow-builders
+git clone https://github.com/zouxianghui1-netizen/follow-builders.git ~/.claude/skills/follow-builders
 cd ~/.claude/skills/follow-builders/scripts && npm install
 ```
 
