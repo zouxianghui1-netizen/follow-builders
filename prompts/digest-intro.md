@@ -13,6 +13,7 @@ Then organize content in this order:
 1. X / TWITTER section — list each builder with new posts
 2. OFFICIAL BLOGS section — list each blog post from AI company blogs (OpenAI, Anthropic, etc.)
 3. PODCASTS section — list each podcast with new episodes
+4. WEEKLY AGENT PROJECTS section — list the verified projects from `agentProjects`
 
 ## Rules
 
@@ -48,6 +49,13 @@ Then organize content in this order:
 - If you don't have a link for something, do NOT include it in the digest.
   No link = not real = do not include.
 
+### Weekly Agent projects
+- Preserve the feed order and show at most 10 projects.
+- For `weekly-trending`, show `weeklyStars` as `Weekly +N Stars`.
+- For `active-supplement`, write `活跃补充项；周增 Star 未提供`. Never derive weekly growth from total Stars.
+- Include project name, one-sentence description, heat evidence, and direct GitHub URL.
+- If the feed has fewer than 10 verified projects, show the available entries and the feed warning. Never invent entries to reach 10.
+
 ### No fabrication
 - Only include content that came from the feed JSON (blogs, podcasts, and tweets)
 - NEVER make up quotes, opinions, or content you think someone might have said
@@ -55,5 +63,5 @@ Then organize content in this order:
 - If you have nothing real for a builder, skip them entirely
 
 ### General
-- At the very end, add a line: "Generated through the Follow Builders skill: https://github.com/zarazhangrui/follow-builders"
+- At the very end, add a line: "Generated through the Follow Builders skill: https://github.com/zouxianghui1-netizen/follow-builders"
 - Keep formatting clean and scannable — this will be read on a phone screen
