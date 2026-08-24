@@ -1,122 +1,122 @@
 {
-  "generatedAt": "2026-08-17T03:29:33.583Z",
-  "snapshotDate": "2026-08-17",
+  "generatedAt": "2026-08-24T03:36:42.537Z",
+  "snapshotDate": "2026-08-24",
   "methodology": "GitHub Weekly Trending Agent projects first; recently active GitHub topic:ai-agent repositories fill remaining slots. Supplement entries never claim weekly Star growth.",
   "projects": [
     {
       "rank": 1,
-      "name": "PrimeIntellect-ai/prime-agent",
-      "url": "https://github.com/PrimeIntellect-ai/prime-agent",
-      "description": "A self-improving RLM agent for coding workflows and long-running autonomous tasks.",
-      "language": "TypeScript",
-      "totalStars": 16627,
-      "weeklyStars": 6435,
+      "name": "volcengine/OpenViking",
+      "url": "https://github.com/volcengine/OpenViking",
+      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+      "language": "Python",
+      "totalStars": 32567,
+      "weeklyStars": 3799,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 2,
-      "name": "TencentCloud/TencentDB-Agent-Memory",
-      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
-      "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+      "name": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
       "language": "TypeScript",
-      "totalStars": 22300,
-      "weeklyStars": 3637,
+      "totalStars": 2413,
+      "weeklyStars": 859,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 3,
-      "name": "addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "totalStars": 87805,
-      "weeklyStars": 2882,
-      "heatType": "weekly-trending",
-      "pushedAt": null
-    },
-    {
-      "rank": 4,
-      "name": "macro-inc/macro",
-      "url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-      "language": "Rust",
-      "totalStars": 3430,
-      "weeklyStars": 2588,
-      "heatType": "weekly-trending",
-      "pushedAt": null
-    },
-    {
-      "rank": 5,
-      "name": "paperclipai/paperclip",
-      "url": "https://github.com/paperclipai/paperclip",
-      "description": "The open-source app everyone uses to manage agents at work",
-      "language": "TypeScript",
-      "totalStars": 78546,
-      "weeklyStars": 2499,
-      "heatType": "weekly-trending",
-      "pushedAt": null
-    },
-    {
-      "rank": 6,
-      "name": "vitali87/code-graph-rag",
-      "url": "https://github.com/vitali87/code-graph-rag",
-      "description": "The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the power of AI and knowledge graphs",
-      "language": "Python",
-      "totalStars": 4437,
-      "weeklyStars": 1686,
-      "heatType": "weekly-trending",
-      "pushedAt": null
-    },
-    {
-      "rank": 7,
-      "name": "ToolJet/ToolJet",
-      "url": "https://github.com/ToolJet/ToolJet",
-      "description": "ToolJet is the open-source foundation of ToolJet AI - the enterprise app generation platform for building internal tools, dashboard, business applications, workflows and AI agents 🚀",
-      "language": "JavaScript",
-      "totalStars": 40131,
-      "weeklyStars": 1518,
-      "heatType": "weekly-trending",
-      "pushedAt": null
-    },
-    {
-      "rank": 8,
       "name": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "totalStars": 231585,
+      "totalStars": 235107,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-08-17T03:27:39Z"
+      "pushedAt": "2026-08-24T03:34:40Z"
     },
     {
-      "rank": 9,
+      "rank": 4,
       "name": "shareAI-lab/learn-claude-code",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
       "language": "Python",
-      "totalStars": 74400,
+      "totalStars": 75046,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-08-16T14:51:47Z"
+      "pushedAt": "2026-08-18T17:42:28Z"
     },
     {
-      "rank": 10,
+      "rank": 5,
+      "name": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "totalStars": 74535,
+      "weeklyStars": null,
+      "heatType": "active-supplement",
+      "pushedAt": "2026-08-12T03:39:49Z"
+    },
+    {
+      "rank": 6,
       "name": "thedaviddias/Front-End-Checklist",
       "url": "https://github.com/thedaviddias/Front-End-Checklist",
       "description": "🗂 The essential checklist for modern web development, for humans and AI agents",
       "language": "MDX",
-      "totalStars": 73541,
+      "totalStars": 73621,
       "weeklyStars": null,
       "heatType": "active-supplement",
       "pushedAt": "2026-08-14T05:59:25Z"
+    },
+    {
+      "rank": 7,
+      "name": "CherryHQ/cherry-studio",
+      "url": "https://github.com/CherryHQ/cherry-studio",
+      "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
+      "language": "TypeScript",
+      "totalStars": 50968,
+      "weeklyStars": null,
+      "heatType": "active-supplement",
+      "pushedAt": "2026-08-24T03:17:31Z"
+    },
+    {
+      "rank": 8,
+      "name": "HKUDS/nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
+      "language": "Python",
+      "totalStars": 47316,
+      "weeklyStars": null,
+      "heatType": "active-supplement",
+      "pushedAt": "2026-08-24T03:25:02Z"
+    },
+    {
+      "rank": 9,
+      "name": "zhayujie/CowAgent",
+      "url": "https://github.com/zhayujie/CowAgent",
+      "description": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)",
+      "language": "Python",
+      "totalStars": 46642,
+      "weeklyStars": null,
+      "heatType": "active-supplement",
+      "pushedAt": "2026-08-23T09:56:41Z"
+    },
+    {
+      "rank": 10,
+      "name": "siyuan-note/siyuan",
+      "url": "https://github.com/siyuan-note/siyuan",
+      "description": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
+      "language": "TypeScript",
+      "totalStars": 45949,
+      "weeklyStars": null,
+      "heatType": "active-supplement",
+      "pushedAt": "2026-08-23T23:52:52Z"
     }
   ],
   "stats": {
     "total": 10,
-    "weeklyTrending": 7,
-    "activeSupplements": 3
+    "weeklyTrending": 2,
+    "activeSupplements": 8
   }
 }
