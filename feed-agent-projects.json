@@ -1,122 +1,122 @@
 {
-  "generatedAt": "2026-08-24T03:36:42.537Z",
-  "snapshotDate": "2026-08-24",
+  "generatedAt": "2026-08-31T05:29:51.803Z",
+  "snapshotDate": "2026-08-31",
   "methodology": "GitHub Weekly Trending Agent projects first; recently active GitHub topic:ai-agent repositories fill remaining slots. Supplement entries never claim weekly Star growth.",
   "projects": [
     {
       "rank": 1,
-      "name": "volcengine/OpenViking",
-      "url": "https://github.com/volcengine/OpenViking",
-      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-      "language": "Python",
-      "totalStars": 32567,
-      "weeklyStars": 3799,
+      "name": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "totalStars": 35597,
+      "weeklyStars": 18103,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 2,
-      "name": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "language": "TypeScript",
-      "totalStars": 2413,
-      "weeklyStars": 859,
+      "name": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "totalStars": 120191,
+      "weeklyStars": 5510,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 3,
+      "name": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "totalStars": 39674,
+      "weeklyStars": 4309,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 4,
+      "name": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+      "language": "Rust",
+      "totalStars": 39052,
+      "weeklyStars": 2526,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 5,
+      "name": "THU-MAIC/OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "language": "TypeScript",
+      "totalStars": 24733,
+      "weeklyStars": 2085,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 6,
+      "name": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "language": "TypeScript",
+      "totalStars": 4235,
+      "weeklyStars": 1973,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 7,
       "name": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "totalStars": 235107,
+      "totalStars": 238586,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-08-24T03:34:40Z"
+      "pushedAt": "2026-08-31T05:21:05Z"
     },
     {
-      "rank": 4,
-      "name": "shareAI-lab/learn-claude-code",
-      "url": "https://github.com/shareAI-lab/learn-claude-code",
-      "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
-      "language": "Python",
-      "totalStars": 75046,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-08-18T17:42:28Z"
-    },
-    {
-      "rank": 5,
+      "rank": 8,
       "name": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "totalStars": 74535,
+      "totalStars": 76849,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-08-12T03:39:49Z"
+      "pushedAt": "2026-08-25T05:36:18Z"
     },
     {
-      "rank": 6,
+      "rank": 9,
+      "name": "shareAI-lab/learn-claude-code",
+      "url": "https://github.com/shareAI-lab/learn-claude-code",
+      "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
+      "language": "Python",
+      "totalStars": 75696,
+      "weeklyStars": null,
+      "heatType": "active-supplement",
+      "pushedAt": "2026-08-26T16:38:22Z"
+    },
+    {
+      "rank": 10,
       "name": "thedaviddias/Front-End-Checklist",
       "url": "https://github.com/thedaviddias/Front-End-Checklist",
       "description": "🗂 The essential checklist for modern web development, for humans and AI agents",
       "language": "MDX",
-      "totalStars": 73621,
+      "totalStars": 73973,
       "weeklyStars": null,
       "heatType": "active-supplement",
       "pushedAt": "2026-08-14T05:59:25Z"
-    },
-    {
-      "rank": 7,
-      "name": "CherryHQ/cherry-studio",
-      "url": "https://github.com/CherryHQ/cherry-studio",
-      "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
-      "language": "TypeScript",
-      "totalStars": 50968,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-08-24T03:17:31Z"
-    },
-    {
-      "rank": 8,
-      "name": "HKUDS/nanobot",
-      "url": "https://github.com/HKUDS/nanobot",
-      "description": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools, memory, MCP, multi-agent workflows, automation, and chat apps",
-      "language": "Python",
-      "totalStars": 47316,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-08-24T03:25:02Z"
-    },
-    {
-      "rank": 9,
-      "name": "zhayujie/CowAgent",
-      "url": "https://github.com/zhayujie/CowAgent",
-      "description": "Open-source super AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves with memory and knowledge. Multi-model, multi-channel. Lightweight, extensible, one-line install. (formerly chatgpt-on-wechat)",
-      "language": "Python",
-      "totalStars": 46642,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-08-23T09:56:41Z"
-    },
-    {
-      "rank": 10,
-      "name": "siyuan-note/siyuan",
-      "url": "https://github.com/siyuan-note/siyuan",
-      "description": "An open-source, privacy-first, self-hosted knowledge workspace where humans and AI agents work together 开源、隐私优先、自托管的知识工作空间，让人与智能体在此协作",
-      "language": "TypeScript",
-      "totalStars": 45949,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-08-23T23:52:52Z"
     }
   ],
   "stats": {
     "total": 10,
-    "weeklyTrending": 2,
-    "activeSupplements": 8
+    "weeklyTrending": 6,
+    "activeSupplements": 4
   }
 }
