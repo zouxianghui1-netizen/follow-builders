@@ -1,122 +1,122 @@
 {
-  "generatedAt": "2026-10-19T04:35:42.154Z",
-  "snapshotDate": "2026-10-19",
+  "generatedAt": "2026-10-26T04:41:32.731Z",
+  "snapshotDate": "2026-10-26",
   "methodology": "GitHub Weekly Trending Agent projects first; recently active GitHub topic:ai-agent repositories fill remaining slots. Supplement entries never claim weekly Star growth.",
   "projects": [
     {
       "rank": 1,
-      "name": "morluto/rea",
-      "url": "https://github.com/morluto/rea",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
-      "language": "TypeScript",
-      "totalStars": 324974,
-      "weeklyStars": 229268,
+      "name": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "totalStars": 47223,
+      "weeklyStars": 15072,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 2,
-      "name": "heygen-com/hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "description": "Write HTML. Render video. Built for agents.",
+      "name": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "language": "TypeScript",
-      "totalStars": 66907,
-      "weeklyStars": 5883,
+      "totalStars": 106051,
+      "weeklyStars": 9622,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 3,
-      "name": "mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "name": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
       "language": "TypeScript",
-      "totalStars": 30825,
-      "weeklyStars": 4138,
+      "totalStars": 221596,
+      "weeklyStars": 5921,
       "heatType": "weekly-trending",
       "pushedAt": null
     },
     {
       "rank": 4,
+      "name": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "totalStars": 72310,
+      "weeklyStars": 5612,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 5,
+      "name": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "totalStars": 13562,
+      "weeklyStars": 3254,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 6,
+      "name": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+      "language": "TypeScript",
+      "totalStars": 79321,
+      "weeklyStars": 2987,
+      "heatType": "weekly-trending",
+      "pushedAt": null
+    },
+    {
+      "rank": 7,
       "name": "NousResearch/hermes-agent",
       "url": "https://github.com/NousResearch/hermes-agent",
       "description": "The agent that grows with you",
       "language": "Python",
-      "totalStars": 254989,
+      "totalStars": 257107,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-10-19T04:16:16Z"
+      "pushedAt": "2026-10-26T04:40:51Z"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "name": "Panniantong/Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach",
       "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
       "language": "Python",
-      "totalStars": 99152,
+      "totalStars": 102583,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-10-15T11:34:42Z"
+      "pushedAt": "2026-10-25T04:37:26Z"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "name": "shareAI-lab/learn-claude-code",
       "url": "https://github.com/shareAI-lab/learn-claude-code",
       "description": "Bash is all you need -  A nano claude code–like 「agent harness」, built from 0 to 1",
       "language": "Python",
-      "totalStars": 78797,
+      "totalStars": 79230,
       "weeklyStars": null,
       "heatType": "active-supplement",
       "pushedAt": "2026-09-28T13:49:16Z"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "name": "career-ops-hq/career-ops",
       "url": "https://github.com/career-ops-hq/career-ops",
       "description": "Open-source AI job search agent and job finder: scan job boards, score each job 1-5 against your CV before you apply, tailor an ATS-friendly resume and cover letter, get interview prep and a job application tracker. It helps you fill in each application; you press Submit. Runs locally in your AI coding CLI (Claude Code, Codex, OpenCode and more).",
       "language": "JavaScript",
-      "totalStars": 75527,
+      "totalStars": 77327,
       "weeklyStars": null,
       "heatType": "active-supplement",
-      "pushedAt": "2026-10-18T20:38:09Z"
-    },
-    {
-      "rank": 8,
-      "name": "thedaviddias/Front-End-Checklist",
-      "url": "https://github.com/thedaviddias/Front-End-Checklist",
-      "description": "🗂 The essential checklist for modern web development, for humans and AI agents",
-      "language": "MDX",
-      "totalStars": 74505,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-10-06T12:58:18Z"
-    },
-    {
-      "rank": 9,
-      "name": "bojieli/ai-agent-book",
-      "url": "https://github.com/bojieli/ai-agent-book",
-      "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
-      "language": "Python",
-      "totalStars": 54839,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-10-08T15:06:27Z"
-    },
-    {
-      "rank": 10,
-      "name": "CherryHQ/cherry-studio",
-      "url": "https://github.com/CherryHQ/cherry-studio",
-      "description": "AI productivity studio with smart chat, autonomous agents, and 300+ assistants. Unified access to frontier LLMs",
-      "language": "TypeScript",
-      "totalStars": 52735,
-      "weeklyStars": null,
-      "heatType": "active-supplement",
-      "pushedAt": "2026-10-19T04:27:11Z"
+      "pushedAt": "2026-10-26T02:53:26Z"
     }
   ],
   "stats": {
     "total": 10,
-    "weeklyTrending": 3,
-    "activeSupplements": 7
+    "weeklyTrending": 6,
+    "activeSupplements": 4
   }
 }
